@@ -26,7 +26,8 @@ class Transfer
   end
 
   def reverse_transfer
-    execute_transaction.reverse
+    @sender.reverse
+    @receiver.reverse
   end
 
 end
