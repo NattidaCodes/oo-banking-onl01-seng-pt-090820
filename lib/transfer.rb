@@ -20,10 +20,9 @@ class Transfer
       @status = "complete"
     else
       @sender.balance < @amount
-      @status = "rejected"
-
+      closed_account_transfer.status = "rejected"
+      "Transaction rejected. Please check your account balance."
     end
-    "Transaction rejected. Please check your account balance."
   end
 
   def reverse_transfer
