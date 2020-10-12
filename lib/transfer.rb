@@ -26,8 +26,7 @@ class Transfer
   end
 
   def reverse_transfer
-    @sender.reverse
-    @receiver.reverse
+    Transfer.reverse
   end
 
 end
